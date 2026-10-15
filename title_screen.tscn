@@ -1,3 +1,144 @@
 [gd_scene format=3 uid="uid://co3nrb35b3n53"]
 
+[ext_resource type="PackedScene" uid="uid://bl3tkjt222wbd" path="res://wobble_effect/wobble_layer.tscn" id="1_v6p8y"]
+[ext_resource type="Texture2D" uid="uid://rpbk4xqjma7b" path="res://icon.svg" id="2_ak2if"]
+[ext_resource type="Script" uid="uid://3huybdbll7q2" path="res://scripts/menu_button.gd" id="3_ig5kc"]
+
+[sub_resource type="Theme" id="Theme_ak2if"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ak2if"]
+bg_color = Color(1, 0.625, 0.25, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.625, 0.25, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_left = 10.0
+expand_margin_right = 10.0
+shadow_size = 5
+shadow_offset = Vector2(10, 10)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_05l2w"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+shadow_size = 2
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ig5kc"]
+bg_color = Color(0.85, 0.53125, 0.2125, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_left = 10.0
+expand_margin_right = 10.0
+shadow_size = 5
+shadow_offset = Vector2(10, 10)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hafda"]
+bg_color = Color(1, 0.625, 0.25, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.625, 0.25, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_left = 10.0
+expand_margin_right = 10.0
+shadow_size = 5
+shadow_offset = Vector2(10, 10)
+
 [node name="TitleScreen" type="Node2D" unique_id=730191629]
+
+[node name="WobbleLayer" parent="." unique_id=452855017 instance=ExtResource("1_v6p8y")]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1771182467]
+position = Vector2(943, 371)
+texture = ExtResource("2_ak2if")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=236107739]
+
+[node name="PlayButton" type="Button" parent="CanvasLayer" unique_id=68670977]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.8
+anchor_right = 0.5
+anchor_bottom = 0.8
+offset_left = -82.0
+offset_top = -108.0
+offset_right = 82.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_ak2if")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_ak2if")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_05l2w")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ig5kc")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ig5kc")
+text = "PLAY"
+script = ExtResource("3_ig5kc")
+hover_color = Color(0.85, 0.53125, 0.2125, 1)
+normal_color = Color(1, 0.625, 0.25, 1)
+
+[node name="ExitButton" type="Button" parent="CanvasLayer" unique_id=1307318993]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.8
+anchor_right = 0.5
+anchor_bottom = 0.8
+offset_left = -82.0
+offset_top = 12.0
+offset_right = 82.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_ak2if")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_hafda")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_05l2w")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ig5kc")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ig5kc")
+text = "QUIT"
+script = ExtResource("3_ig5kc")
+hover_color = Color(0.85, 0.53125, 0.2125, 1)
+normal_color = Color(1, 0.625, 0.25, 1)
+
+[connection signal="focus_entered" from="CanvasLayer/PlayButton" to="CanvasLayer/PlayButton" method="_on_focus_entered"]
+[connection signal="focus_exited" from="CanvasLayer/PlayButton" to="CanvasLayer/PlayButton" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/PlayButton" to="CanvasLayer/PlayButton" method="_on_focus_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/PlayButton" to="CanvasLayer/PlayButton" method="_on_focus_exited"]
+[connection signal="pressed" from="CanvasLayer/PlayButton" to="CanvasLayer/PlayButton" method="_play"]
+[connection signal="focus_entered" from="CanvasLayer/ExitButton" to="CanvasLayer/ExitButton" method="_on_focus_entered"]
+[connection signal="focus_exited" from="CanvasLayer/ExitButton" to="CanvasLayer/ExitButton" method="_on_focus_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/ExitButton" to="CanvasLayer/ExitButton" method="_on_focus_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/ExitButton" to="CanvasLayer/ExitButton" method="_on_focus_exited"]
+[connection signal="pressed" from="CanvasLayer/ExitButton" to="CanvasLayer/PlayButton" method="_exit"]

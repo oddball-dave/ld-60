@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://bl3tkjt222wbd"]
+
+[ext_resource type="Shader" uid="uid://h2gnl5c1mxhk" path="res://wobble_effect/wobble.gdshader" id="1_3kbmp"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_r824j"]
+frequency = 0.5
+domain_warp_enabled = true
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_toehp"]
+width = 480
+height = 270
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_r824j")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3kbmp"]
+shader = ExtResource("1_3kbmp")
+shader_parameter/flowMap = SubResource("NoiseTexture2D_toehp")
+shader_parameter/strength = 3.0
+shader_parameter/speed = 2.0
+shader_parameter/frames = 4
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_3kbmp"]
+width = 1920
+height = 1080
+generate_mipmaps = false
+noise = SubResource("FastNoiseLite_r824j")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_toehp"]
+shader = ExtResource("1_3kbmp")
+shader_parameter/flowMap = SubResource("NoiseTexture2D_3kbmp")
+shader_parameter/strength = 3.0
+shader_parameter/speed = 4.0
+shader_parameter/frames = 4
+
+[node name="WobbleLayer" type="CanvasLayer" unique_id=452855017]
+layer = 512
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=359808925]
+visible = false
+material = SubResource("ShaderMaterial_3kbmp")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1856978659]
+material = SubResource("ShaderMaterial_toehp")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
