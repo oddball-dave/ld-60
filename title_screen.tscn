@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bl3tkjt222wbd" path="res://wobble_effect/wobble_layer.tscn" id="1_v6p8y"]
 [ext_resource type="Texture2D" uid="uid://rpbk4xqjma7b" path="res://icon.svg" id="2_ak2if"]
 [ext_resource type="Script" uid="uid://3huybdbll7q2" path="res://scripts/menu_button.gd" id="3_ig5kc"]
+[ext_resource type="Texture2D" uid="uid://dfxosyaobvavv" path="res://media/gfx/paper.png" id="4_05l2w"]
 
 [sub_resource type="Theme" id="Theme_ak2if"]
 
@@ -136,6 +137,13 @@ text = "QUIT"
 script = ExtResource("3_ig5kc")
 hover_color = Color(0.85, 0.53125, 0.2125, 1)
 normal_color = Color(1, 0.625, 0.25, 1)
+
+[node name="GUI" type="CanvasLayer" parent="." unique_id=775012855]
+layer = 768
+
+[node name="Paper" type="Sprite2D" parent="GUI" unique_id=938892242]
+position = Vector2(960, 540)
+texture = ExtResource("4_05l2w")
 
 [connection signal="focus_entered" from="CanvasLayer/PlayButton" to="CanvasLayer/PlayButton" method="_on_focus_entered"]
 [connection signal="focus_exited" from="CanvasLayer/PlayButton" to="CanvasLayer/PlayButton" method="_on_focus_exited"]

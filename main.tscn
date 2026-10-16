@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://bl3tkjt222wbd" path="res://wobble_effect/wobble_layer.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://bv6i1dmljhmow" path="res://pause_menu.tscn" id="3_h2yge"]
 [ext_resource type="Texture2D" uid="uid://rpbk4xqjma7b" path="res://icon.svg" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://dfxosyaobvavv" path="res://media/gfx/paper.png" id="4_lquwl"]
+[ext_resource type="Texture2D" uid="uid://dc36k2d4s4tnx" path="res://media/gfx/test.png" id="6_7mycd"]
 
 [node name="Main" type="Node2D" unique_id=610534095]
 script = ExtResource("1_0xm2m")
@@ -13,5 +15,16 @@ script = ExtResource("1_0xm2m")
 [node name="PauseMenu" parent="." unique_id=1147128227 instance=ExtResource("3_h2yge")]
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=1746489739]
-position = Vector2(939, 517)
+position = Vector2(259, 517)
 texture = ExtResource("4_1bvp3")
+
+[node name="GUI" type="CanvasLayer" parent="." unique_id=416851472]
+layer = 768
+
+[node name="Paper" type="Sprite2D" parent="GUI" unique_id=1723889841]
+position = Vector2(960, 540)
+texture = ExtResource("4_lquwl")
+
+[node name="Test" type="Sprite2D" parent="." unique_id=1055705887]
+position = Vector2(1048, 391)
+texture = ExtResource("6_7mycd")
