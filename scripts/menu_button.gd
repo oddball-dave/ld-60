@@ -1,11 +1,15 @@
 class_name GameMenuButton extends Button
 
-const TRANS_TIME : float = .5
+const TRANS_TIME : float = .3
 
 @export var hover_color : Color = Color.GRAY
 @export var normal_color : Color = Color.LIGHT_GRAY
+@export var start_with_focus : bool = false
 
 var tween : Tween
+
+func _ready() -> void:
+	if start_with_focus: grab_focus(true)
 
 func _play() -> void:
 	get_tree().paused = false
@@ -47,3 +51,7 @@ func _on_focus_exited() -> void:
 	tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
 	tween.tween_property(normal_stylebox,"border_color",normal_color,TRANS_TIME)
 	
+
+
+func _on_visibility_changed() -> void:
+	if visible and start_with_focus: grab_focus(true)
