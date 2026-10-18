@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ir38fv73wa2b"]
+
+[ext_resource type="Script" uid="uid://cp0ki0cde2puo" path="res://scripts/line_segment.gd" id="1_73xpg"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_g4v7s"]
+resource_local_to_scene = true
+b = Vector2(0, 0)
+
+[node name="LineSegment" type="Line2D" unique_id=352131916]
+points = PackedVector2Array(0, 0, 0, 0)
+width = 4.0
+default_color = Color(0.19999999, 0.6, 1, 1)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+antialiased = true
+script = ExtResource("1_73xpg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=413945]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1460295734]
+shape = SubResource("SegmentShape2D_g4v7s")
+one_way_collision = true
+one_way_collision_margin = 0.1

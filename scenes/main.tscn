@@ -1,0 +1,347 @@
+[gd_scene format=3 uid="uid://dggmv72mor6lf"]
+
+[ext_resource type="Script" uid="uid://c014d6i0bxm6s" path="res://scripts/main.gd" id="1_fv21b"]
+[ext_resource type="PackedScene" uid="uid://cwgoabx2lrant" path="res://scenes/skater_boy.tscn" id="2_tel4y"]
+[ext_resource type="PackedScene" uid="uid://bl3tkjt222wbd" path="res://wobble_effect/wobble_layer.tscn" id="3_qkpxi"]
+[ext_resource type="Texture2D" uid="uid://rpbk4xqjma7b" path="res://icon.svg" id="4_5q0nq"]
+[ext_resource type="Texture2D" uid="uid://dfxosyaobvavv" path="res://media/gfx/paper.png" id="5_dgi5k"]
+[ext_resource type="ButtonGroup" uid="uid://boqdvn4hwhuic" path="res://pencil_group.tres" id="6_j8jky"]
+[ext_resource type="Texture2D" uid="uid://bmy08wwj7hsw8" path="res://media/gfx/normal_pencil.png" id="7_kmb1v"]
+[ext_resource type="Texture2D" uid="uid://bynihnbdsiekw" path="res://media/gfx/normal_pencil_pressed.png" id="8_fuf3a"]
+[ext_resource type="Texture2D" uid="uid://tmq7tcynwrsy" path="res://media/gfx/normal_pencil_hover.png" id="9_pibwh"]
+[ext_resource type="BitMap" uid="uid://bqwyf5ufh8g3t" path="res://media/gfx/pencil_mask.png" id="10_c6pm6"]
+[ext_resource type="Texture2D" uid="uid://c2koosnav6qqn" path="res://media/gfx/decoration_pencil.png" id="11_5he1u"]
+[ext_resource type="Texture2D" uid="uid://b5yy6qokyxyme" path="res://media/gfx/decoration_pencil_pressed.png" id="12_5poiv"]
+[ext_resource type="Texture2D" uid="uid://dx2xdy7kqdyuq" path="res://media/gfx/decoration_pencil_hover.png" id="13_2cjbq"]
+[ext_resource type="Texture2D" uid="uid://datbb86pssbv5" path="res://media/gfx/magic_pencil.png" id="14_chjal"]
+[ext_resource type="Texture2D" uid="uid://dpvayrhoc7vo6" path="res://media/gfx/magic_pencil_pressed.png" id="15_cjqg0"]
+[ext_resource type="Texture2D" uid="uid://b1cm481eaypj4" path="res://media/gfx/magic_pencil_hover.png" id="16_vchkt"]
+[ext_resource type="Texture2D" uid="uid://wbqn8hbuqw4q" path="res://media/gfx/motor_pencil.png" id="17_txyw0"]
+[ext_resource type="Texture2D" uid="uid://bp6o6hawwj4cn" path="res://media/gfx/motor_pencil_pressed.png" id="18_vc5cj"]
+[ext_resource type="Texture2D" uid="uid://beciwyyb4v17n" path="res://media/gfx/motor_pencil_hover.png" id="19_nvyfr"]
+[ext_resource type="Texture2D" uid="uid://bjd6ev51f23db" path="res://media/gfx/passthrough_pencil.png" id="20_ty1g6"]
+[ext_resource type="Texture2D" uid="uid://c1cty7bj6tml6" path="res://media/gfx/passthrough_pencil_pressed.png" id="21_j2jfr"]
+[ext_resource type="Texture2D" uid="uid://d3f340t4e3h0f" path="res://media/gfx/passthrough_pencil_hover.png" id="22_bjg73"]
+[ext_resource type="Texture2D" uid="uid://0nuyujtbkvd5" path="res://media/gfx/eraser.png" id="23_bu4jf"]
+[ext_resource type="Texture2D" uid="uid://bllqcvv2dymob" path="res://media/gfx/eraser_pressed.png" id="24_o7ddy"]
+[ext_resource type="Texture2D" uid="uid://b4iddkobxmvej" path="res://media/gfx/eraser_hover.png" id="25_0loja"]
+[ext_resource type="BitMap" uid="uid://ies14eec2lyi" path="res://media/gfx/eraser_mask.png" id="26_ids8r"]
+[ext_resource type="Script" uid="uid://bcmayen3gtscx" path="res://scripts/drawer.gd" id="27_dnhof"]
+[ext_resource type="Texture2D" uid="uid://c4m8ce2movmos" path="res://media/gfx/ruler.png" id="27_fuf3a"]
+[ext_resource type="PackedScene" uid="uid://bk63k1shve267" path="res://scenes/line_segment.tscn" id="28_1v6qk"]
+[ext_resource type="Texture2D" uid="uid://q6wode1lmc8h" path="res://media/gfx/ruler_pressed.png" id="28_pibwh"]
+[ext_resource type="Script" uid="uid://ditp4qgyjmm67" path="res://scripts/check_points.gd" id="29_augu2"]
+[ext_resource type="Texture2D" uid="uid://k407jukgwqdr" path="res://media/gfx/ruler_hover.png" id="29_c6pm6"]
+[ext_resource type="PackedScene" uid="uid://dsjbevs5pcbcp" path="res://scenes/deco_segment.tscn" id="29_qkpxi"]
+[ext_resource type="BitMap" uid="uid://de2g3nxfnn3wb" path="res://media/gfx/ruler_mask.png" id="30_pibwh"]
+[ext_resource type="PackedScene" uid="uid://dxq12ekpby6me" path="res://scenes/magi_segment.tscn" id="30_qkpxi"]
+[ext_resource type="Texture2D" uid="uid://def2mrsxfehqu" path="res://media/gfx/checkpoint.png" id="30_tm6hj"]
+[ext_resource type="PackedScene" uid="uid://dbqiox1vymjny" path="res://scenes/moto_segment.tscn" id="31_5q0nq"]
+[ext_resource type="Texture2D" uid="uid://dayhfjg72muob" path="res://media/gfx/mp3player.png" id="31_c6pm6"]
+[ext_resource type="Texture2D" uid="uid://cjr7uxx03i06o" path="res://media/gfx/play_button.png" id="32_5poiv"]
+[ext_resource type="PackedScene" uid="uid://ir38fv73wa2b" path="res://scenes/pass_segment.tscn" id="32_dgi5k"]
+[ext_resource type="Texture2D" uid="uid://qrhiiuoh1hru" path="res://media/gfx/play_button_hover.png" id="33_2cjbq"]
+[ext_resource type="Texture2D" uid="uid://bmmofo3wals5c" path="res://media/gfx/play_button_pressed.png" id="33_chjal"]
+[ext_resource type="BitMap" uid="uid://d317i1v6do36c" path="res://media/gfx/play_button_mask.png" id="35_cjqg0"]
+[ext_resource type="Texture2D" uid="uid://bsf48p8usavmm" path="res://media/gfx/reset_button.png" id="36_vchkt"]
+[ext_resource type="Texture2D" uid="uid://bwjg0hc0s0kcl" path="res://media/gfx/reset_button_pressed.png" id="37_vc5cj"]
+[ext_resource type="Texture2D" uid="uid://dsxa6s05oilvl" path="res://media/gfx/reset_button_hover.png" id="38_nvyfr"]
+[ext_resource type="BitMap" uid="uid://ce7fheghmkv0c" path="res://media/gfx/reset_button_mask.png" id="39_ty1g6"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_pibwh"]
+device = -1
+keycode = 49
+unicode = 49
+
+[sub_resource type="Shortcut" id="Shortcut_c6pm6"]
+events = [SubResource("InputEventKey_pibwh")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_c6pm6"]
+device = -1
+keycode = 50
+unicode = 50
+
+[sub_resource type="Shortcut" id="Shortcut_5he1u"]
+events = [SubResource("InputEventKey_c6pm6")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_5he1u"]
+device = -1
+keycode = 51
+unicode = 51
+
+[sub_resource type="Shortcut" id="Shortcut_2cjbq"]
+events = [SubResource("InputEventKey_5he1u")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_5poiv"]
+device = -1
+keycode = 52
+unicode = 52
+
+[sub_resource type="Shortcut" id="Shortcut_cjqg0"]
+events = [SubResource("InputEventKey_5poiv")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_2cjbq"]
+device = -1
+keycode = 53
+unicode = 53
+
+[sub_resource type="Shortcut" id="Shortcut_txyw0"]
+events = [SubResource("InputEventKey_2cjbq")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_chjal"]
+device = -1
+keycode = 54
+unicode = 54
+
+[sub_resource type="Shortcut" id="Shortcut_nvyfr"]
+events = [SubResource("InputEventKey_chjal")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_cjqg0"]
+device = -1
+keycode = 55
+unicode = 55
+
+[sub_resource type="Shortcut" id="Shortcut_bjg73"]
+events = [SubResource("InputEventKey_cjqg0")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_vchkt"]
+device = -1
+keycode = 32
+unicode = 32
+
+[sub_resource type="Shortcut" id="Shortcut_vchkt"]
+events = [SubResource("InputEventKey_vchkt")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_j2jfr"]
+device = -1
+keycode = 4194305
+
+[sub_resource type="Shortcut" id="Shortcut_kw4k8"]
+events = [SubResource("InputEventKey_j2jfr")]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_xuqvo"]
+normal = Vector2(1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qsp4k"]
+normal = Vector2(-1, 0)
+
+[node name="Main" type="Node2D" unique_id=610534095]
+process_mode = 3
+script = ExtResource("1_fv21b")
+skater_boy = ExtResource("2_tel4y")
+
+[node name="WobbleLayer" parent="." unique_id=452855017 instance=ExtResource("3_qkpxi")]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1746489739]
+position = Vector2(1648, 990)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_5q0nq")
+
+[node name="GUI" type="CanvasLayer" parent="." unique_id=416851472]
+layer = 768
+
+[node name="Paper" type="Sprite2D" parent="GUI" unique_id=1723889841]
+position = Vector2(960, 540)
+texture = ExtResource("5_dgi5k")
+
+[node name="NormalPencil" type="TextureButton" parent="GUI" unique_id=1392189410]
+offset_left = 1650.0
+offset_top = 50.0
+offset_right = 1950.0
+offset_bottom = 142.0
+tooltip_text = "Normal Pencil
+Skater will collider with these lines"
+toggle_mode = true
+button_pressed = true
+button_group = ExtResource("6_j8jky")
+shortcut = SubResource("Shortcut_c6pm6")
+texture_normal = ExtResource("7_kmb1v")
+texture_pressed = ExtResource("8_fuf3a")
+texture_hover = ExtResource("9_pibwh")
+texture_click_mask = ExtResource("10_c6pm6")
+
+[node name="DecorationPencil" type="TextureButton" parent="GUI" unique_id=1251807717]
+offset_left = 1650.0
+offset_top = 150.0
+offset_right = 1950.0
+offset_bottom = 242.0
+tooltip_text = "Decoration Pencil
+Skater will ignore these lines"
+toggle_mode = true
+button_group = ExtResource("6_j8jky")
+shortcut = SubResource("Shortcut_5he1u")
+texture_normal = ExtResource("11_5he1u")
+texture_pressed = ExtResource("12_5poiv")
+texture_hover = ExtResource("13_2cjbq")
+texture_click_mask = ExtResource("10_c6pm6")
+
+[node name="MagicPencil" type="TextureButton" parent="GUI" unique_id=127483023]
+offset_left = 1650.0
+offset_top = 250.0
+offset_right = 1950.0
+offset_bottom = 342.0
+tooltip_text = "Disappearing Pencil
+These lines disappear after the skater rolls over them"
+toggle_mode = true
+button_group = ExtResource("6_j8jky")
+shortcut = SubResource("Shortcut_2cjbq")
+texture_normal = ExtResource("14_chjal")
+texture_pressed = ExtResource("15_cjqg0")
+texture_hover = ExtResource("16_vchkt")
+texture_click_mask = ExtResource("10_c6pm6")
+
+[node name="MotorPencil" type="TextureButton" parent="GUI" unique_id=634511803]
+offset_left = 1650.0
+offset_top = 350.0
+offset_right = 1950.0
+offset_bottom = 442.0
+tooltip_text = "Boost Pencil
+Skater speeds up when rolling over these lines"
+toggle_mode = true
+button_group = ExtResource("6_j8jky")
+shortcut = SubResource("Shortcut_cjqg0")
+texture_normal = ExtResource("17_txyw0")
+texture_pressed = ExtResource("18_vc5cj")
+texture_hover = ExtResource("19_nvyfr")
+texture_click_mask = ExtResource("10_c6pm6")
+
+[node name="PassthroughPencil" type="TextureButton" parent="GUI" unique_id=721480641]
+offset_left = 1650.0
+offset_top = 450.0
+offset_right = 1950.0
+offset_bottom = 542.0
+tooltip_text = "One Way Collision Pencil
+Skater only collides with one side of these lines. The side depends on which direction the line is drawn in"
+toggle_mode = true
+button_group = ExtResource("6_j8jky")
+shortcut = SubResource("Shortcut_txyw0")
+texture_normal = ExtResource("20_ty1g6")
+texture_pressed = ExtResource("21_j2jfr")
+texture_hover = ExtResource("22_bjg73")
+texture_click_mask = ExtResource("10_c6pm6")
+
+[node name="Eraser" type="TextureButton" parent="GUI" unique_id=1005286157]
+offset_left = 1650.0
+offset_top = 550.0
+offset_right = 1950.0
+offset_bottom = 642.0
+tooltip_text = "Eraser
+Rubs out pencil lines. The ruler has no effect on the eraser"
+toggle_mode = true
+button_group = ExtResource("6_j8jky")
+shortcut = SubResource("Shortcut_nvyfr")
+texture_normal = ExtResource("23_bu4jf")
+texture_pressed = ExtResource("24_o7ddy")
+texture_hover = ExtResource("25_0loja")
+texture_click_mask = ExtResource("26_ids8r")
+
+[node name="Ruler" type="TextureButton" parent="GUI" unique_id=285663311]
+offset_left = 1670.0
+offset_top = 775.0
+offset_right = 1970.0
+offset_bottom = 1025.0
+tooltip_text = "Ruler
+Selecting ruler will make pencils draw straight lines"
+toggle_mode = true
+shortcut = SubResource("Shortcut_bjg73")
+texture_normal = ExtResource("27_fuf3a")
+texture_pressed = ExtResource("28_pibwh")
+texture_hover = ExtResource("29_c6pm6")
+texture_click_mask = ExtResource("30_pibwh")
+
+[node name="MP3Player" type="TextureRect" parent="GUI" unique_id=1872874897]
+offset_left = -143.00002
+offset_top = 874.00006
+offset_right = 212.99998
+offset_bottom = 1230.0
+rotation = -0.27595466
+texture = ExtResource("31_c6pm6")
+
+[node name="PlayPause" type="TextureButton" parent="GUI/MP3Player" unique_id=426581633]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 113.0
+offset_right = 308.0
+offset_bottom = 248.0
+tooltip_text = "Play/Pause
+Play or pause the skater. Does not affect drawing."
+shortcut = SubResource("Shortcut_vchkt")
+texture_normal = ExtResource("32_5poiv")
+texture_pressed = ExtResource("33_chjal")
+texture_hover = ExtResource("33_2cjbq")
+texture_click_mask = ExtResource("35_cjqg0")
+
+[node name="Reset" type="TextureButton" parent="GUI/MP3Player" unique_id=1916621974]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 163.0
+offset_right = 183.0
+offset_bottom = 248.0
+tooltip_text = "Reset
+Returns skater and checkpoints to their original positions, and returns disappeared(red) pencil lines"
+shortcut = SubResource("Shortcut_kw4k8")
+texture_normal = ExtResource("36_vchkt")
+texture_pressed = ExtResource("37_vc5cj")
+texture_hover = ExtResource("38_nvyfr")
+texture_click_mask = ExtResource("39_ty1g6")
+
+[node name="Drawer" type="Node2D" parent="." unique_id=1770240236]
+process_mode = 3
+script = ExtResource("27_dnhof")
+line_segment = ExtResource("28_1v6qk")
+deco_segment = ExtResource("29_qkpxi")
+magi_segment = ExtResource("30_qkpxi")
+moto_segment = ExtResource("31_5q0nq")
+pass_segment = ExtResource("32_dgi5k")
+
+[node name="CheckPoints" type="Node2D" parent="." unique_id=401823034]
+script = ExtResource("29_augu2")
+
+[node name="Checkpoint" type="Sprite2D" parent="CheckPoints" unique_id=1146263781]
+position = Vector2(500, 300)
+texture = ExtResource("30_tm6hj")
+hframes = 10
+
+[node name="Checkpoint1" type="Sprite2D" parent="CheckPoints" unique_id=1890418442]
+position = Vector2(922, 554)
+texture = ExtResource("30_tm6hj")
+hframes = 10
+frame = 1
+
+[node name="Checkpoint2" type="Sprite2D" parent="CheckPoints" unique_id=1836462997]
+position = Vector2(1202, 642)
+texture = ExtResource("30_tm6hj")
+hframes = 10
+frame = 2
+
+[node name="Bounds" type="Node2D" parent="." unique_id=105031143]
+
+[node name="Bottom" type="StaticBody2D" parent="Bounds" unique_id=1051912591]
+position = Vector2(0, 1080)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/Bottom" unique_id=1361110058]
+shape = SubResource("WorldBoundaryShape2D_g4v7s")
+
+[node name="Left" type="StaticBody2D" parent="Bounds" unique_id=1578466337]
+position = Vector2(200, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/Left" unique_id=150703268]
+shape = SubResource("WorldBoundaryShape2D_xuqvo")
+
+[node name="Right" type="StaticBody2D" parent="Bounds" unique_id=117479573]
+position = Vector2(1720, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/Right" unique_id=484269462]
+shape = SubResource("WorldBoundaryShape2D_qsp4k")
+
+[connection signal="toggled" from="GUI/NormalPencil" to="." method="_normal_toggle"]
+[connection signal="toggled" from="GUI/DecorationPencil" to="." method="_decoration_toggle"]
+[connection signal="toggled" from="GUI/MagicPencil" to="." method="_magic_toggle"]
+[connection signal="toggled" from="GUI/MotorPencil" to="." method="_motor_toggle"]
+[connection signal="toggled" from="GUI/PassthroughPencil" to="." method="_passthrough_toggle"]
+[connection signal="toggled" from="GUI/Eraser" to="." method="_eraser_toggle"]
+[connection signal="toggled" from="GUI/Ruler" to="." method="_ruler_toggle"]
+[connection signal="pressed" from="GUI/MP3Player/PlayPause" to="." method="play_pause"]
+[connection signal="pressed" from="GUI/MP3Player/Reset" to="." method="_reset"]

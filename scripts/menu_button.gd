@@ -13,11 +13,11 @@ func _ready() -> void:
 
 func _play() -> void:
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://main.tscn")
+	get_tree().change_scene_to_file("res://scenes/main.tscn")
 
 func _title() -> void:
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://title_screen.tscn")
+	get_tree().change_scene_to_file("res://scenes/title_screen.tscn")
 
 func _unpause() -> void:
 	get_tree().paused = false
