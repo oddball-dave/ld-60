@@ -17,7 +17,8 @@ radius = 7.0
 [node name="SkaterBoy" type="RigidBody2D" unique_id=216764782]
 physics_material_override = SubResource("PhysicsMaterial_373lb")
 center_of_mass_mode = 1
-center_of_mass = Vector2(0, 20)
+center_of_mass = Vector2(0, 25)
+can_sleep = false
 continuous_cd = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=448349789]
@@ -32,6 +33,10 @@ position = Vector2(0, -33)
 shape = SubResource("CircleShape2D_g4v7s")
 
 [node name="Lines" type="Node2D" parent="." unique_id=1484988408]
+
+[node name="Polygon2D" type="Polygon2D" parent="Lines" unique_id=749174142]
+color = Color(0.89, 0.825475, 0.7565, 1)
+polygon = PackedVector2Array(0, -43, 8, -39, 8, -29, 5, -26, -2, -24, -9, -29, -10, -36, -6, -41)
 
 [node name="Line2D" type="Line2D" parent="Lines" unique_id=1181042705]
 points = PackedVector2Array(-20, 20, 20, 20)
@@ -81,6 +86,7 @@ antialiased = true
 
 [node name="BackWheel" type="RigidBody2D" parent="." unique_id=1468679703]
 position = Vector2(-13, 27)
+can_sleep = false
 continuous_cd = 2
 contact_monitor = true
 max_contacts_reported = 4
@@ -109,6 +115,7 @@ softness = 1.0
 
 [node name="FrontWheel" type="RigidBody2D" parent="." unique_id=1546930836]
 position = Vector2(13, 27)
+can_sleep = false
 continuous_cd = 2
 contact_monitor = true
 max_contacts_reported = 4

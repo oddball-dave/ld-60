@@ -3,21 +3,42 @@
 [ext_resource type="Script" uid="uid://c014d6i0bxm6s" path="res://scripts/main.gd" id="1_fv21b"]
 [ext_resource type="PackedScene" uid="uid://cwgoabx2lrant" path="res://scenes/skater_boy.tscn" id="2_tel4y"]
 [ext_resource type="PackedScene" uid="uid://bl3tkjt222wbd" path="res://wobble_effect/wobble_layer.tscn" id="3_qkpxi"]
-[ext_resource type="Texture2D" uid="uid://rpbk4xqjma7b" path="res://icon.svg" id="4_5q0nq"]
+[ext_resource type="PackedScene" uid="uid://0ensc06p6kcj" path="res://level_scenes/tutorial_checkpoints.tscn" id="4_gdvew"]
+[ext_resource type="PackedScene" uid="uid://bfjvg02vbu636" path="res://level_scenes/title_checkpoints.tscn" id="4_r4e17"]
 [ext_resource type="Texture2D" uid="uid://dfxosyaobvavv" path="res://media/gfx/paper.png" id="5_dgi5k"]
+[ext_resource type="PackedScene" uid="uid://bef6pbxp2qhje" path="res://level_scenes/level_1_checkpoints.tscn" id="5_kjtvk"]
+[ext_resource type="Texture2D" uid="uid://cdmrdtj6lauxt" path="res://media/gfx/tutorial_bg.png" id="5_r4e17"]
+[ext_resource type="Texture2D" uid="uid://dvj2husso62y" path="res://media/gfx/level_1.png" id="6_1v6qk"]
+[ext_resource type="ButtonGroup" uid="uid://depqvd57qkg3s" path="res://levels_group.tres" id="6_152kg"]
 [ext_resource type="ButtonGroup" uid="uid://boqdvn4hwhuic" path="res://pencil_group.tres" id="6_j8jky"]
+[ext_resource type="Texture2D" uid="uid://d34h86v6boi4p" path="res://media/gfx/level_3.png" id="6_t5ykj"]
+[ext_resource type="PackedScene" uid="uid://widt06cdrvml" path="res://level_scenes/level_2_checkpoints.tscn" id="6_xrs0c"]
+[ext_resource type="Texture2D" uid="uid://ccs8mka1g0g8j" path="res://media/gfx/level_3_pressed.png" id="7_1epgm"]
+[ext_resource type="Texture2D" uid="uid://cfi7upfrlu6la" path="res://media/gfx/level_1_hover.png" id="7_augu2"]
+[ext_resource type="Texture2D" uid="uid://bpsaec58g44nu" path="res://media/gfx/level_3_hover.png" id="7_e755i"]
 [ext_resource type="Texture2D" uid="uid://bmy08wwj7hsw8" path="res://media/gfx/normal_pencil.png" id="7_kmb1v"]
+[ext_resource type="Texture2D" uid="uid://l2h7h6v6vx8v" path="res://media/gfx/title_hover.png" id="7_o7ddy"]
+[ext_resource type="PackedScene" uid="uid://dpdjregdcbahm" path="res://level_scenes/level_3_checkpoints.tscn" id="7_xljpf"]
 [ext_resource type="Texture2D" uid="uid://bynihnbdsiekw" path="res://media/gfx/normal_pencil_pressed.png" id="8_fuf3a"]
+[ext_resource type="Texture2D" uid="uid://d17ev63labrx2" path="res://media/gfx/tutorial.png" id="8_ids8r"]
+[ext_resource type="Texture2D" uid="uid://b4nc6o0gi7fgq" path="res://media/gfx/level_2.png" id="8_ro3en"]
+[ext_resource type="Texture2D" uid="uid://chkglqnrtnm8j" path="res://media/gfx/tutorial_hover.png" id="9_dnhof"]
+[ext_resource type="Texture2D" uid="uid://haus3go1wli4" path="res://media/gfx/level_2_hover.png" id="9_od4ux"]
 [ext_resource type="Texture2D" uid="uid://tmq7tcynwrsy" path="res://media/gfx/normal_pencil_hover.png" id="9_pibwh"]
+[ext_resource type="Texture2D" uid="uid://c5jcuf0y86nkq" path="res://media/gfx/level_2_pressed.png" id="10_152kg"]
 [ext_resource type="BitMap" uid="uid://bqwyf5ufh8g3t" path="res://media/gfx/pencil_mask.png" id="10_c6pm6"]
+[ext_resource type="Texture2D" uid="uid://babo711ra0dsk" path="res://media/gfx/level_3_bg.png" id="10_kjtvk"]
 [ext_resource type="Texture2D" uid="uid://c2koosnav6qqn" path="res://media/gfx/decoration_pencil.png" id="11_5he1u"]
 [ext_resource type="Texture2D" uid="uid://b5yy6qokyxyme" path="res://media/gfx/decoration_pencil_pressed.png" id="12_5poiv"]
 [ext_resource type="Texture2D" uid="uid://dx2xdy7kqdyuq" path="res://media/gfx/decoration_pencil_hover.png" id="13_2cjbq"]
+[ext_resource type="Texture2D" uid="uid://ccxev7lii26w1" path="res://media/gfx/level_1_pressed.png" id="13_r4e17"]
 [ext_resource type="Texture2D" uid="uid://datbb86pssbv5" path="res://media/gfx/magic_pencil.png" id="14_chjal"]
 [ext_resource type="Texture2D" uid="uid://dpvayrhoc7vo6" path="res://media/gfx/magic_pencil_pressed.png" id="15_cjqg0"]
 [ext_resource type="Texture2D" uid="uid://b1cm481eaypj4" path="res://media/gfx/magic_pencil_hover.png" id="16_vchkt"]
+[ext_resource type="Texture2D" uid="uid://cyi4sullpe35k" path="res://media/gfx/tutorial_pressed.png" id="16_y57op"]
 [ext_resource type="Texture2D" uid="uid://wbqn8hbuqw4q" path="res://media/gfx/motor_pencil.png" id="17_txyw0"]
 [ext_resource type="Texture2D" uid="uid://bp6o6hawwj4cn" path="res://media/gfx/motor_pencil_pressed.png" id="18_vc5cj"]
+[ext_resource type="Texture2D" uid="uid://bkwfg4jutxmyx" path="res://media/gfx/titles_pressed.png" id="19_mlv25"]
 [ext_resource type="Texture2D" uid="uid://beciwyyb4v17n" path="res://media/gfx/motor_pencil_hover.png" id="19_nvyfr"]
 [ext_resource type="Texture2D" uid="uid://bjd6ev51f23db" path="res://media/gfx/passthrough_pencil.png" id="20_ty1g6"]
 [ext_resource type="Texture2D" uid="uid://c1cty7bj6tml6" path="res://media/gfx/passthrough_pencil_pressed.png" id="21_j2jfr"]
@@ -30,23 +51,34 @@
 [ext_resource type="Texture2D" uid="uid://c4m8ce2movmos" path="res://media/gfx/ruler.png" id="27_fuf3a"]
 [ext_resource type="PackedScene" uid="uid://bk63k1shve267" path="res://scenes/line_segment.tscn" id="28_1v6qk"]
 [ext_resource type="Texture2D" uid="uid://q6wode1lmc8h" path="res://media/gfx/ruler_pressed.png" id="28_pibwh"]
-[ext_resource type="Script" uid="uid://ditp4qgyjmm67" path="res://scripts/check_points.gd" id="29_augu2"]
 [ext_resource type="Texture2D" uid="uid://k407jukgwqdr" path="res://media/gfx/ruler_hover.png" id="29_c6pm6"]
 [ext_resource type="PackedScene" uid="uid://dsjbevs5pcbcp" path="res://scenes/deco_segment.tscn" id="29_qkpxi"]
 [ext_resource type="BitMap" uid="uid://de2g3nxfnn3wb" path="res://media/gfx/ruler_mask.png" id="30_pibwh"]
 [ext_resource type="PackedScene" uid="uid://dxq12ekpby6me" path="res://scenes/magi_segment.tscn" id="30_qkpxi"]
-[ext_resource type="Texture2D" uid="uid://def2mrsxfehqu" path="res://media/gfx/checkpoint.png" id="30_tm6hj"]
 [ext_resource type="PackedScene" uid="uid://dbqiox1vymjny" path="res://scenes/moto_segment.tscn" id="31_5q0nq"]
 [ext_resource type="Texture2D" uid="uid://dayhfjg72muob" path="res://media/gfx/mp3player.png" id="31_c6pm6"]
 [ext_resource type="Texture2D" uid="uid://cjr7uxx03i06o" path="res://media/gfx/play_button.png" id="32_5poiv"]
+[ext_resource type="Texture2D" uid="uid://coldkw7f3kxhr" path="res://media/gfx/cable.png" id="32_bjg73"]
 [ext_resource type="PackedScene" uid="uid://ir38fv73wa2b" path="res://scenes/pass_segment.tscn" id="32_dgi5k"]
+[ext_resource type="Texture2D" uid="uid://royvk5r8eeyf" path="res://media/gfx/indicator.png" id="32_ty1g6"]
 [ext_resource type="Texture2D" uid="uid://qrhiiuoh1hru" path="res://media/gfx/play_button_hover.png" id="33_2cjbq"]
 [ext_resource type="Texture2D" uid="uid://bmmofo3wals5c" path="res://media/gfx/play_button_pressed.png" id="33_chjal"]
+[ext_resource type="Script" uid="uid://criehh1j1igtr" path="res://scripts/indicator.gd" id="33_j2jfr"]
 [ext_resource type="BitMap" uid="uid://d317i1v6do36c" path="res://media/gfx/play_button_mask.png" id="35_cjqg0"]
 [ext_resource type="Texture2D" uid="uid://bsf48p8usavmm" path="res://media/gfx/reset_button.png" id="36_vchkt"]
 [ext_resource type="Texture2D" uid="uid://bwjg0hc0s0kcl" path="res://media/gfx/reset_button_pressed.png" id="37_vc5cj"]
 [ext_resource type="Texture2D" uid="uid://dsxa6s05oilvl" path="res://media/gfx/reset_button_hover.png" id="38_nvyfr"]
 [ext_resource type="BitMap" uid="uid://ce7fheghmkv0c" path="res://media/gfx/reset_button_mask.png" id="39_ty1g6"]
+[ext_resource type="AudioStream" uid="uid://dt21ar4jtpltj" path="res://media/sfx/skater_song.ogg" id="40_nvyfr"]
+[ext_resource type="Texture2D" uid="uid://be1hp315xcf87" path="res://media/gfx/title.png" id="44_bu4jf"]
+[ext_resource type="Texture2D" uid="uid://b5wslbuvd0q6d" path="res://media/gfx/titles_bg.png" id="63_mlv25"]
+[ext_resource type="AudioStream" uid="uid://cn4cqnycwnxmi" path="res://media/sfx/pencil_select.wav" id="67_xrs0c"]
+[ext_resource type="AudioStream" uid="uid://carh3bsmqhun8" path="res://media/sfx/eraser_select.wav" id="68_xljpf"]
+[ext_resource type="AudioStream" uid="uid://beh2tqkptbveo" path="res://media/sfx/ruler_select.wav" id="69_j4bwh"]
+[ext_resource type="AudioStream" uid="uid://d1ft7ilvy406e" path="res://media/sfx/level_select.wav" id="70_ksmap"]
+[ext_resource type="AudioStream" uid="uid://chjpchdl7ejwa" path="res://media/sfx/mp3_select.wav" id="71_ygd8o"]
+[ext_resource type="AudioStream" uid="uid://cn3brny50d4ag" path="res://media/sfx/scribble.wav" id="73_kjtvk"]
+[ext_resource type="AudioStream" uid="uid://bj1aef0jim8lk" path="res://media/sfx/rub_out.wav" id="79_2s0kr"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_pibwh"]
 device = -1
@@ -131,20 +163,93 @@ normal = Vector2(-1, 0)
 process_mode = 3
 script = ExtResource("1_fv21b")
 skater_boy = ExtResource("2_tel4y")
+checkpoints_scenes = Array[PackedScene]([ExtResource("4_r4e17"), ExtResource("4_gdvew"), ExtResource("5_kjtvk"), ExtResource("6_xrs0c"), ExtResource("7_xljpf")])
+background_textures = Array[Texture2D]([ExtResource("63_mlv25"), ExtResource("5_r4e17"), null, null, ExtResource("10_kjtvk")])
 
 [node name="WobbleLayer" parent="." unique_id=452855017 instance=ExtResource("3_qkpxi")]
-
-[node name="Icon" type="Sprite2D" parent="." unique_id=1746489739]
-position = Vector2(1648, 990)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("4_5q0nq")
+visible = false
 
 [node name="GUI" type="CanvasLayer" parent="." unique_id=416851472]
 layer = 768
 
+[node name="CrosshairRegion" type="Control" parent="GUI" unique_id=546170262]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 230.0
+offset_top = 20.0
+offset_right = 1700.0
+offset_bottom = 1060.0
+mouse_default_cursor_shape = 3
+
 [node name="Paper" type="Sprite2D" parent="GUI" unique_id=1723889841]
 position = Vector2(960, 540)
 texture = ExtResource("5_dgi5k")
+
+[node name="Level3" type="TextureButton" parent="GUI" unique_id=449000589]
+offset_top = 650.0
+offset_right = 200.0
+offset_bottom = 788.0
+rotation = -0.017453292
+tooltip_text = "Selecting a level will clear any drawing."
+mouse_default_cursor_shape = 2
+toggle_mode = true
+button_group = ExtResource("6_152kg")
+texture_normal = ExtResource("6_t5ykj")
+texture_pressed = ExtResource("7_1epgm")
+texture_hover = ExtResource("7_e755i")
+
+[node name="Level2" type="TextureButton" parent="GUI" unique_id=1479655020]
+offset_top = 500.0
+offset_right = 200.0
+offset_bottom = 638.0
+rotation = 0.05235988
+tooltip_text = "Selecting a level will clear any drawing."
+mouse_default_cursor_shape = 2
+toggle_mode = true
+button_group = ExtResource("6_152kg")
+texture_normal = ExtResource("8_ro3en")
+texture_pressed = ExtResource("10_152kg")
+texture_hover = ExtResource("9_od4ux")
+
+[node name="Level1" type="TextureButton" parent="GUI" unique_id=1711173507]
+offset_top = 350.0
+offset_right = 200.0
+offset_bottom = 488.0
+rotation = -0.13962634
+tooltip_text = "Selecting a level will clear any drawing."
+mouse_default_cursor_shape = 2
+toggle_mode = true
+button_group = ExtResource("6_152kg")
+texture_normal = ExtResource("6_1v6qk")
+texture_pressed = ExtResource("13_r4e17")
+texture_hover = ExtResource("7_augu2")
+
+[node name="Tutorial" type="TextureButton" parent="GUI" unique_id=1658297494]
+offset_top = 200.0
+offset_right = 200.0
+offset_bottom = 338.0
+rotation = -0.05235988
+tooltip_text = "Selecting a level will clear any drawing."
+mouse_default_cursor_shape = 2
+toggle_mode = true
+button_group = ExtResource("6_152kg")
+texture_normal = ExtResource("8_ids8r")
+texture_pressed = ExtResource("16_y57op")
+texture_hover = ExtResource("9_dnhof")
+
+[node name="Titles" type="TextureButton" parent="GUI" unique_id=770937755]
+offset_top = 50.0
+offset_right = 200.0
+offset_bottom = 188.0
+rotation = 0.08726646
+tooltip_text = "Selecting a level will clear any drawing."
+mouse_default_cursor_shape = 2
+toggle_mode = true
+button_pressed = true
+button_group = ExtResource("6_152kg")
+texture_normal = ExtResource("44_bu4jf")
+texture_pressed = ExtResource("19_mlv25")
+texture_hover = ExtResource("7_o7ddy")
 
 [node name="NormalPencil" type="TextureButton" parent="GUI" unique_id=1392189410]
 offset_left = 1650.0
@@ -153,6 +258,7 @@ offset_right = 1950.0
 offset_bottom = 142.0
 tooltip_text = "Normal Pencil
 Skater will collider with these lines"
+mouse_default_cursor_shape = 2
 toggle_mode = true
 button_pressed = true
 button_group = ExtResource("6_j8jky")
@@ -169,6 +275,7 @@ offset_right = 1950.0
 offset_bottom = 242.0
 tooltip_text = "Decoration Pencil
 Skater will ignore these lines"
+mouse_default_cursor_shape = 2
 toggle_mode = true
 button_group = ExtResource("6_j8jky")
 shortcut = SubResource("Shortcut_5he1u")
@@ -184,6 +291,7 @@ offset_right = 1950.0
 offset_bottom = 342.0
 tooltip_text = "Disappearing Pencil
 These lines disappear after the skater rolls over them"
+mouse_default_cursor_shape = 2
 toggle_mode = true
 button_group = ExtResource("6_j8jky")
 shortcut = SubResource("Shortcut_2cjbq")
@@ -199,6 +307,7 @@ offset_right = 1950.0
 offset_bottom = 442.0
 tooltip_text = "Boost Pencil
 Skater speeds up when rolling over these lines"
+mouse_default_cursor_shape = 2
 toggle_mode = true
 button_group = ExtResource("6_j8jky")
 shortcut = SubResource("Shortcut_cjqg0")
@@ -214,6 +323,7 @@ offset_right = 1950.0
 offset_bottom = 542.0
 tooltip_text = "One Way Collision Pencil
 Skater only collides with one side of these lines. The side depends on which direction the line is drawn in"
+mouse_default_cursor_shape = 2
 toggle_mode = true
 button_group = ExtResource("6_j8jky")
 shortcut = SubResource("Shortcut_txyw0")
@@ -229,6 +339,7 @@ offset_right = 1950.0
 offset_bottom = 642.0
 tooltip_text = "Eraser
 Rubs out pencil lines. The ruler has no effect on the eraser"
+mouse_default_cursor_shape = 2
 toggle_mode = true
 button_group = ExtResource("6_j8jky")
 shortcut = SubResource("Shortcut_nvyfr")
@@ -244,6 +355,7 @@ offset_right = 1970.0
 offset_bottom = 1025.0
 tooltip_text = "Ruler
 Selecting ruler will make pencils draw straight lines"
+mouse_default_cursor_shape = 2
 toggle_mode = true
 shortcut = SubResource("Shortcut_bjg73")
 texture_normal = ExtResource("27_fuf3a")
@@ -259,6 +371,25 @@ offset_bottom = 1230.0
 rotation = -0.27595466
 texture = ExtResource("31_c6pm6")
 
+[node name="Cable" type="TextureRect" parent="GUI/MP3Player" unique_id=314440945]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -76.301254
+offset_top = -145.28636
+offset_right = 323.69873
+offset_bottom = 54.71364
+mouse_filter = 2
+texture = ExtResource("32_bjg73")
+
+[node name="Indicator" type="TextureRect" parent="GUI/MP3Player" unique_id=103782222]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 57.0
+offset_right = 293.0
+offset_bottom = 85.0
+texture = ExtResource("32_ty1g6")
+script = ExtResource("33_j2jfr")
+
 [node name="PlayPause" type="TextureButton" parent="GUI/MP3Player" unique_id=426581633]
 layout_mode = 0
 offset_left = 173.0
@@ -267,6 +398,7 @@ offset_right = 308.0
 offset_bottom = 248.0
 tooltip_text = "Play/Pause
 Play or pause the skater. Does not affect drawing."
+mouse_default_cursor_shape = 2
 shortcut = SubResource("Shortcut_vchkt")
 texture_normal = ExtResource("32_5poiv")
 texture_pressed = ExtResource("33_chjal")
@@ -281,40 +413,35 @@ offset_right = 183.0
 offset_bottom = 248.0
 tooltip_text = "Reset
 Returns skater and checkpoints to their original positions, and returns disappeared(red) pencil lines"
+mouse_default_cursor_shape = 2
 shortcut = SubResource("Shortcut_kw4k8")
 texture_normal = ExtResource("36_vchkt")
 texture_pressed = ExtResource("37_vc5cj")
 texture_hover = ExtResource("38_nvyfr")
 texture_click_mask = ExtResource("39_ty1g6")
 
-[node name="Drawer" type="Node2D" parent="." unique_id=1770240236]
-process_mode = 3
-script = ExtResource("27_dnhof")
-line_segment = ExtResource("28_1v6qk")
-deco_segment = ExtResource("29_qkpxi")
-magi_segment = ExtResource("30_qkpxi")
-moto_segment = ExtResource("31_5q0nq")
-pass_segment = ExtResource("32_dgi5k")
+[node name="Music" type="AudioStreamPlayer" parent="GUI/MP3Player" unique_id=209865630]
+process_mode = 1
+stream = ExtResource("40_nvyfr")
+autoplay = true
 
-[node name="CheckPoints" type="Node2D" parent="." unique_id=401823034]
-script = ExtResource("29_augu2")
+[node name="PencilSFX" type="AudioStreamPlayer" parent="GUI" unique_id=713817862]
+stream = ExtResource("67_xrs0c")
 
-[node name="Checkpoint" type="Sprite2D" parent="CheckPoints" unique_id=1146263781]
-position = Vector2(500, 300)
-texture = ExtResource("30_tm6hj")
-hframes = 10
+[node name="EraserSFX" type="AudioStreamPlayer" parent="GUI" unique_id=2010111057]
+stream = ExtResource("68_xljpf")
 
-[node name="Checkpoint1" type="Sprite2D" parent="CheckPoints" unique_id=1890418442]
-position = Vector2(922, 554)
-texture = ExtResource("30_tm6hj")
-hframes = 10
-frame = 1
+[node name="RulerSFX" type="AudioStreamPlayer" parent="GUI" unique_id=1095027795]
+stream = ExtResource("69_j4bwh")
 
-[node name="Checkpoint2" type="Sprite2D" parent="CheckPoints" unique_id=1836462997]
-position = Vector2(1202, 642)
-texture = ExtResource("30_tm6hj")
-hframes = 10
-frame = 2
+[node name="LevelSFX" type="AudioStreamPlayer" parent="GUI" unique_id=1772454490]
+stream = ExtResource("70_ksmap")
+
+[node name="Mp3SFX" type="AudioStreamPlayer" parent="GUI" unique_id=1479234989]
+stream = ExtResource("71_ygd8o")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=540521653]
+position = Vector2(960, 540)
 
 [node name="Bounds" type="Node2D" parent="." unique_id=105031143]
 
@@ -336,12 +463,50 @@ position = Vector2(1720, 0)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bounds/Right" unique_id=484269462]
 shape = SubResource("WorldBoundaryShape2D_qsp4k")
 
+[node name="Drawer" type="Node2D" parent="." unique_id=808591743]
+process_mode = 3
+script = ExtResource("27_dnhof")
+drawable_area = Rect2(230, 20, 1470, 1040)
+line_segment = ExtResource("28_1v6qk")
+deco_segment = ExtResource("29_qkpxi")
+magi_segment = ExtResource("30_qkpxi")
+moto_segment = ExtResource("31_5q0nq")
+pass_segment = ExtResource("32_dgi5k")
+metadata/_custom_type_script = "uid://bcmayen3gtscx"
+
+[node name="ScribbleSFX" type="AudioStreamPlayer" parent="Drawer" unique_id=757708068]
+stream = ExtResource("73_kjtvk")
+autoplay = true
+
+[node name="RubOutSFX" type="AudioStreamPlayer" parent="Drawer" unique_id=1399679710]
+stream = ExtResource("79_2s0kr")
+autoplay = true
+
+[connection signal="pressed" from="GUI/Level3" to="GUI/LevelSFX" method="play"]
+[connection signal="pressed" from="GUI/Level3" to="." method="_load_level" binds= [4]]
+[connection signal="pressed" from="GUI/Level2" to="GUI/LevelSFX" method="play"]
+[connection signal="pressed" from="GUI/Level2" to="." method="_load_level" binds= [3]]
+[connection signal="pressed" from="GUI/Level1" to="GUI/LevelSFX" method="play"]
+[connection signal="pressed" from="GUI/Level1" to="." method="_load_level" binds= [2]]
+[connection signal="pressed" from="GUI/Tutorial" to="GUI/LevelSFX" method="play"]
+[connection signal="pressed" from="GUI/Tutorial" to="." method="_load_level" binds= [1]]
+[connection signal="pressed" from="GUI/Titles" to="GUI/LevelSFX" method="play"]
+[connection signal="pressed" from="GUI/Titles" to="." method="_load_level" binds= [0]]
+[connection signal="pressed" from="GUI/NormalPencil" to="GUI/PencilSFX" method="play"]
 [connection signal="toggled" from="GUI/NormalPencil" to="." method="_normal_toggle"]
+[connection signal="pressed" from="GUI/DecorationPencil" to="GUI/PencilSFX" method="play"]
 [connection signal="toggled" from="GUI/DecorationPencil" to="." method="_decoration_toggle"]
+[connection signal="pressed" from="GUI/MagicPencil" to="GUI/PencilSFX" method="play"]
 [connection signal="toggled" from="GUI/MagicPencil" to="." method="_magic_toggle"]
+[connection signal="pressed" from="GUI/MotorPencil" to="GUI/PencilSFX" method="play"]
 [connection signal="toggled" from="GUI/MotorPencil" to="." method="_motor_toggle"]
+[connection signal="pressed" from="GUI/PassthroughPencil" to="GUI/PencilSFX" method="play"]
 [connection signal="toggled" from="GUI/PassthroughPencil" to="." method="_passthrough_toggle"]
+[connection signal="pressed" from="GUI/Eraser" to="GUI/EraserSFX" method="play"]
 [connection signal="toggled" from="GUI/Eraser" to="." method="_eraser_toggle"]
 [connection signal="toggled" from="GUI/Ruler" to="." method="_ruler_toggle"]
+[connection signal="toggled" from="GUI/Ruler" to="GUI/RulerSFX" method="play" unbinds=1]
 [connection signal="pressed" from="GUI/MP3Player/PlayPause" to="." method="play_pause"]
+[connection signal="pressed" from="GUI/MP3Player/PlayPause" to="GUI/Mp3SFX" method="play"]
 [connection signal="pressed" from="GUI/MP3Player/Reset" to="." method="_reset"]
+[connection signal="pressed" from="GUI/MP3Player/Reset" to="GUI/Mp3SFX" method="play"]

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://widt06cdrvml"]
+
+[ext_resource type="Script" uid="uid://ditp4qgyjmm67" path="res://scripts/check_points.gd" id="1_an0ls"]
+[ext_resource type="Texture2D" uid="uid://def2mrsxfehqu" path="res://media/gfx/checkpoint.png" id="2_e6sdc"]
+
+[node name="CheckPoints" type="Node2D" unique_id=1078188710]
+script = ExtResource("1_an0ls")
+
+[node name="Checkpoint" type="Sprite2D" parent="." unique_id=1652016531]
+position = Vector2(1579, 134)
+rotation = -0.8709193
+texture = ExtResource("2_e6sdc")
+hframes = 10
+
+[node name="Checkpoint1" type="Sprite2D" parent="." unique_id=140242413]
+position = Vector2(1359, 397)
+texture = ExtResource("2_e6sdc")
+hframes = 10
+frame = 1
+
+[node name="Checkpoint2" type="Sprite2D" parent="." unique_id=1257849265]
+position = Vector2(767, 696)
+texture = ExtResource("2_e6sdc")
+hframes = 10
+frame = 2
+
+[node name="Checkpoint3" type="Sprite2D" parent="." unique_id=44971936]
+position = Vector2(420, 479)
+texture = ExtResource("2_e6sdc")
+hframes = 10
+frame = 3
+
+[node name="Checkpoint4" type="Sprite2D" parent="." unique_id=638073775]
+position = Vector2(685, 238)
+texture = ExtResource("2_e6sdc")
+hframes = 10
+frame = 4

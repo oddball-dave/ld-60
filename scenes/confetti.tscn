@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://8dl62we5w6sm"]
+
+[ext_resource type="Texture2D" uid="uid://bv3sx0qv85vn0" path="res://media/gfx/confetti.png" id="1_xjk0n"]
+[ext_resource type="AudioStream" uid="uid://bww0qnwvymfu6" path="res://media/sfx/pop.wav" id="2_xejpt"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_57qmd"]
+particles_animation = true
+particles_anim_h_frames = 2
+particles_anim_v_frames = 1
+particles_anim_loop = true
+
+[sub_resource type="Gradient" id="Gradient_xaipn"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.13903743, 0.315508, 0.47058824, 0.6524064, 0.77540106, 0.90909094)
+colors = PackedColorArray(1, 0, 0, 1, 1, 0.5, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0.5, 1, 1, 1, 0, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ndrjj"]
+gradient = SubResource("Gradient_xaipn")
+
+[sub_resource type="Curve" id="Curve_ndrjj"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.21777776, 0.8444444), -1.083333, -1.083333, 0, 0, Vector2(1, 1), -1.3802079, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_d0u6y"]
+curve = SubResource("Curve_ndrjj")
+
+[sub_resource type="Curve" id="Curve_ih3m7"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -3.9999928, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_xaipn"]
+curve = SubResource("Curve_ih3m7")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yf5fn"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 20.0
+direction = Vector3(0, -1, 0)
+initial_velocity_min = 80.0
+initial_velocity_max = 160.0
+angular_velocity_min = -180.00002
+angular_velocity_max = 179.99998
+gravity = Vector3(0, 75, 0)
+linear_accel_min = 9.999997
+linear_accel_max = 29.999996
+damping_min = 74.0
+damping_max = 78.0
+damping_curve = SubResource("CurveTexture_d0u6y")
+scale_min = 0.5
+scale_curve = SubResource("CurveTexture_xaipn")
+color_initial_ramp = SubResource("GradientTexture1D_ndrjj")
+anim_speed_min = 2.0
+anim_speed_max = 5.0
+anim_offset_max = 1.0
+
+[node name="Confetti" type="GPUParticles2D" unique_id=372328452]
+material = SubResource("CanvasItemMaterial_57qmd")
+emitting = false
+amount = 50
+texture = ExtResource("1_xjk0n")
+lifetime = 4.0
+one_shot = true
+explosiveness = 0.97
+randomness = 0.5
+process_material = SubResource("ParticleProcessMaterial_yf5fn")
+
+[node name="PopSFX" type="AudioStreamPlayer" parent="." unique_id=316107381]
+stream = ExtResource("2_xejpt")
+autoplay = true
+
+[connection signal="finished" from="." to="." method="queue_free"]

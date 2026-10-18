@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bfjvg02vbu636"]
+
+[ext_resource type="Script" uid="uid://ditp4qgyjmm67" path="res://scripts/check_points.gd" id="1_twin0"]
+[ext_resource type="Texture2D" uid="uid://def2mrsxfehqu" path="res://media/gfx/checkpoint.png" id="2_pmhfw"]
+
+[node name="CheckPoints" type="Node2D" unique_id=1704673443]
+script = ExtResource("1_twin0")
+
+[node name="Checkpoint" type="Sprite2D" parent="." unique_id=651644777]
+position = Vector2(315, 127)
+rotation = 0.74351025
+texture = ExtResource("2_pmhfw")
+hframes = 10
